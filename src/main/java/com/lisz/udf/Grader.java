@@ -23,6 +23,7 @@ public class Grader extends UDF {
 //        return new Text(str + "," + grade);
 //    }
 
+    // Accept multiple arguments
     public Text evaluate(final Text textName, final IntWritable iwScore) {
         if (iwScore == null) return null;
         int score = iwScore.get();
