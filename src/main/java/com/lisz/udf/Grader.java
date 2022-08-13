@@ -23,7 +23,7 @@ public class Grader extends UDF {
 //        return new Text(str + "," + grade);
 //    }
 
-    // Accept multiple arguments. evaluate method will be invoked from hive
+    // Accept multiple arguments. evaluate method will be invoked from hive.
     public Text evaluate(final Text textName, final IntWritable iwScore) {
         if (iwScore == null) return null;
         int score = iwScore.get();
